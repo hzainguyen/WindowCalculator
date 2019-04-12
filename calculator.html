@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <link rel="Stylesheet" href="calculator.css" type="text/css">
+</head>
+
+<body class="mt-3">
+    <div class="container">
+        <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8 col-xs-12">
+          <div class="fm-background-grey pt-2">
+            <div id="calculator">
+            <header class="top-part">
+                <div class="top">
+                    <p class="branding">Calculator</p>
+                    <div class="window">
+                        <div class="minimize buttonBar" role="button">
+                            <img class="icon icons8-Minus-Math-" src="icon/min.png">
+                        </div>
+                        <div class="maximize buttonBar" role="button">
+                            <img class="icon icons8-Rectangle" src="icon/max.png">
+                        </div>
+                        <div class="close buttonBar" role="button">
+                            <img class="icon icons8-Multiply" src="icon/close.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="type">
+                    <div class="column menu">
+                        <div class="calculator-menu button-top" role="button">
+                            <img class="icon icons8-Menu" src="icon/button-top.png">
+                        </div>
+                        <label>Standard</label>
+                    </div>
+                    <div class="column history">
+                        <div class="button-top" role="button">
+                            <img class="icon icons8-Past" src="icon/history.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="screen">
+                    <div class="history-screen">
+                        <input id="history" name="history" type="text" value="" disabled>
+                    </div>
+                    <div class="main-screen">
+                        <input id="main" name="main" value="" type="text" disabled>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="memory">
+                        <div role="button">MC</div>
+                        <div role="button">MR</div>
+                        <div role="button">M+</div>
+                        <div role="button">M-</div>
+                        <div role="button">MS</div>
+                        <div role="button">M <small><small>&#9660;</small></small> </div>
+                    </div>
+                </div>
+            </header>
+            
+            <section class="bottom-part">
+                <div class="features">
+                    <div class="sub-menu">
+                        <div class="row">
+                            <div id="percentage" class="button image sign" data-value="%" role="button" >
+                                <img class="icon icons8-Percentage" src="icon/phantram.png">
+                            </div>
+
+                            <div id="sqrt" class="button image sign" data-value="√" role="button">
+                                <img class="icon icons8-Square-Root" src="icon/canbachai.png">
+                            </div>
+                            <div id="sqr" class="button sign" data-value="sqr" role="button">
+                                <span class="x-sign">
+                                    <sub style = 'font-family:Gabriola'>x</sub>
+                                </span>
+                                <span>
+                                    <sup style = 'font-family:Gabriola'>2</sup>
+                                </span>
+                            </div>
+                            <div id="fraction" class="button sign" data-value="1/x" role="button">
+                                <span>
+                                    <sup style = 'font-family:Gabriola'>1</sup>
+                                </span>
+                                <span >&frasl;</span>
+                                <span class="x-sign">
+                                    <sub>
+                                        <em style = 'font-family:Gabriola'>x</em>
+                                    </sub>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-menu">
+                        <div class="row">
+                            <div id="clear-entry" class="button sign" data-value="CE" role="button">CE</div>
+                            <div id="clear" class="button sign" data-value="C" role="button">C</div>
+                            <div id="clear-element" class="button image sign" data-value="CS" role="button">
+                                <img class="icon icons8-Clear-Symbol" src="icon/xoatungphantu.png">
+                            </div>
+                            <div id="divide" class="button image equals sign" data-value="/" role="button">
+                                <img class="icon icons8-Divide" src="icon/phepchia.png">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="button number fm-font-size-num" role="button" data-value="7">7</div>
+                            <div class="button number fm-font-size-num" role="button" data-value="8">8</div>
+                            <div class="button number fm-font-size-num" role="button" data-value="9">9</div>
+                            <div id="multiply" class="button image equals sign" data-value="*" role="button">
+                                <img class="icon icons8-Multiply" src="icon/phepnhan.png">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="button number fm-font-size-num" role="button" data-value="4">4</div>
+                            <div class="button number fm-font-size-num" role="button" data-value="5">5</div>
+                            <div class="button number fm-font-size-num" role="button" data-value="6">6</div>
+                            <div id="minus" class="button image equals sign" data-value="-" role="button">
+                                <img class="icon icons8-Minus-Math-" src="icon/pheptru.png">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="button number fm-font-size-num" role="button" data-value="1">1</div>
+                            <div class="button number fm-font-size-num" role="button" data-value="2">2</div>
+                            <div class="button number fm-font-size-num" role="button" data-value="3">3</div>
+
+                            <div id="plus" class="button image equals sign" data-value="+" role="button">
+                                <img class="icon icons8-Plus-Math" src="icon/phepcong.png">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div id="plus-minus" class="button image sign" data-value="+-" role="button">
+                                <img class="icon icons8-Plus-Minus" src="icon/phepcongtru.png">
+                            </div>
+                            <div class="button number fm-font-size-num" role="button" data-value="0">0</div>
+                            <div id="dot" class="button dot sign" data-value="." role="button">.</div>
+                            
+                            <div id="equal" class="button image equals sign" data-value="=" role="button">
+                                <img class="icon icons8-Equal-Sign" src="icon/phepbang.png" >
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+    </div>
+    </div>
+
+
+</body>
+<script type="text/javascript" src="calculator.js"></script>
+</html>
